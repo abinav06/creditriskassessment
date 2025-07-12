@@ -10,7 +10,7 @@ from sklearn.impute import SimpleImputer
 from ml.preprocess import load_and_clean
 
 ROOT = Path(__file__).resolve().parents[1]
-CSV_PATH = ROOT / "data" / "raw" / "lending_club_loan.csv"
+CSV_PATH = ROOT / "lending_club_loan.csv"
 
 print("Loading and cleaning data for tuning...")
 df = load_and_clean(CSV_PATH, nrows=50000)
