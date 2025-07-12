@@ -1,13 +1,10 @@
-# End-to-End Credit Risk Assessment System
+# End-to-End Credit Risk System using Python, LightGBM, and FastAPI
 
 This project demonstrates a complete, end-to-end machine learning workflow for assessing credit risk on the Lending Club loan dataset. It covers the entire lifecycle, from data cleaning and feature engineering to model training, optimization, and deployment as a real-time REST API.
 
 The final system predicts the probability of a loan defaulting and provides a risk assessment via an interactive API endpoint.
 
 **Live API Documentation (once running):** [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-
-![SHAP Plot](path/to/your/shap_plot_image.png)
-*(This SHAP plot shows the key drivers influencing the model's predictions after data leakage was resolved)*
 
 ---
 
@@ -126,13 +123,3 @@ The server will be running at `http://127.0.0.1:8000`.
 - **Result:** **`Average CV AUC: 0.71`**
 
 This robust score was achieved after resolving data leakage and performing systematic hyperparameter tuning, indicating a reliable and realistic model performance.
-
----
-
-## Future Improvements
-
-- **Scale to Full Dataset:** Train the final model on the entire dataset to potentially improve performance and generalization.
-- **Advanced Feature Engineering:** Incorporate more complex features, such as interaction terms or target-encoding.
-- **Time-Based Validation:** Implement a time-based cross-validation split to better simulate real-world model deployment.
-- **Containerization:** Dockerize the FastAPI application to make deployment even more portable and scalable.
-- **Automated CI/CD:** Set up a GitHub Actions workflow to automatically test the code and deploy the API on push.
