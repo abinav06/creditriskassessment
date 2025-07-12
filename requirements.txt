@@ -1,0 +1,10 @@
+lightgbm
+pandas
+scikit-learn
+shap
+fastapi
+uvicorn
+mlflow
+optuna
+pydantic
+
